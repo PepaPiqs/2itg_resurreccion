@@ -19,8 +19,8 @@
         <h1 class="text-center" style="margin-top: 20px;padding-top: 30px;font-family: 'Berkshire Swash', serif;font-weight: bold;">Marcos Magnanakaw: Tax Calculator</h1>
         <form>
             <div class="text-center" style="margin-top: 60px;">
-                <p style="font-size: 25px;font-family: Belgrano, serif;">Salary:&nbsp;<center><input class="form-control" type="text" style="width: 400px;" name="annual" required oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;).replace(/(\..*)\./g, &#39;$1&#39;);"></center></p>
-                <p style="margin-top: 30px;font-size: 25px;font-family: Belgrano, serif;">Type:&nbsp;<input type="radio" id="monthly" class="monthly" value="monthly" style="margin-left: 25px;" name="radio1" required><label class="form-label" for="monthly" style="margin-left: 10px;">Monthly</label><input type="radio" id="bimonth" value="bimonth" class="bimonth" style="margin-left: 25px;" name="radio1" required><label class="form-label" for="bimonth" style="margin-left: 10px;">Bi-Monthly</label></p><button class="btn btn-primary" type="submit" name="submit" value="submit" style="margin-bottom: 20px;margin-top: 0px;font-size: 26px;font-family: Belgrano, serif;">Compute</button>
+                <p style="font-size: 25px;font-family: Belgrano, serif;">Salary:&nbsp;<center><input class="form-control" type="text" style="width: 400px;text-align: center;" name="annual" required oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;).replace(/(\..*)\./g, &#39;$1&#39;);"></center></p>
+                <p style="margin-top: 30px;font-size: 25px;font-family: Belgrano, serif;">Type:&nbsp;<input type="radio" id="monthly" class="monthly" value="monthly" style="margin-left: 25px;" name="radio1" required><label class="form-label" for="monthly" style="margin-left: 10px;">Monthly</label><input type="radio" id="bimonth" value="bimonth" class="bimonth" style="margin-left: 25px;" name="radio1" required><label class="form-label" for="bimonth" style="margin-left: 10px;">Bi-Monthly</label></p><button class="btn btn-primary" type="submit" name="submit" value="submit" style="margin-bottom: 20px;margin-top: 0px;font-size: 26px;font-family: Belgrano, serif;background: #9599ff;border-color: #9599ff;">Compute</button>
 
             </div>
         </form>
@@ -73,7 +73,7 @@
                     $salary = number_format($salary, 2, '.', ',');
                     $annualTax = number_format($annualTax, 2, '.', ',');
                     $monthlyTax = number_format($monthlyTax, 2, '.', ',');
-                    
+
                     echo "<center><font size='6pt'> Annual Salary: PHP $salary <br></center></font>"; 
                     echo "<center><font size='6pt'> Est Annual Tax: PHP $annualTax<br></center></font>";
                     echo "<center><font size='6pt'> Est Monthly Tax: PHP $monthlyTax<br></center></font>";
