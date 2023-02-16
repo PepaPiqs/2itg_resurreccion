@@ -70,6 +70,10 @@
                         $annualTax = 2410000+$excess*0.35;
                         $monthlyTax = $annualTax/12;
                     }
+                    $salary = number_format($salary, 2, '.', ',');
+                    $annualTax = number_format($annualTax, 2, '.', ',');
+                    $monthlyTax = number_format($monthlyTax, 2, '.', ',');
+                    
                     echo "<center><font size='6pt'> Annual Salary: PHP $salary <br></center></font>"; 
                     echo "<center><font size='6pt'> Est Annual Tax: PHP $annualTax<br></center></font>";
                     echo "<center><font size='6pt'> Est Monthly Tax: PHP $monthlyTax<br></center></font>";
@@ -112,6 +116,10 @@
                         $annualTax = 2410000+$excess*0.35;
                         $monthlyTax = $annualTax/12;
                     }
+                    $salary = number_format($salary, 2, '.', ',');
+                    $annualTax = number_format($annualTax, 2, '.', ',');
+                    $monthlyTax = number_format($monthlyTax, 2, '.', ',');
+
                     echo "<center><font size='6pt'> Annual Salary: PHP $salary <br></center></font>"; 
                     echo "<center><font size='6pt'> Est Annual Tax: PHP $annualTax<br></center></font>";
                     echo "<center><font size='6pt'> Est Monthly Tax: PHP $monthlyTax<br></center></font>";
