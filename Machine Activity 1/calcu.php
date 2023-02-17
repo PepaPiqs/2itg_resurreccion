@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade&amp;display=swap">
 </head>
 
-<body>
-    <div class="container border rounded" style="background: #fffb95;height: 590px;margin-top: 20px;">
-        <h1 class="text-center" style="margin-top: 20px;padding-top: 30px;font-family: 'Berkshire Swash', serif;font-weight: bold;">Marcos Magnanakaw: Tax Calculator</h1>
+<body background="https://cdn.pixabay.com/photo/2021/03/22/14/11/internet-6114751_960_720.jpg">
+    <div class="container border rounded" style="background: #fffb95;height: 630px;margin-top: 20px;width: 1000px;">
+        <center><h1 class="text-center" style="margin-top: 30px;font-family: 'Berkshire Swash', serif;font-weight: bold;width: 725px;padding-top: 5px;padding-bottom: 5px;border: 8.5px ridge #c695ff ;;">Marcos Magnanakaw: Tax Calculator</h1></center>
         <form>
-            <div class="text-center" style="margin-top: 60px;">
-                <p style="font-size: 25px;font-family: Belgrano, serif;">Salary:&nbsp;<center><input class="form-control" type="text" style="width: 400px;text-align: center;" name="annual" required oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;).replace(/(\..*)\./g, &#39;$1&#39;);"></center></p>
-                <p style="margin-top: 30px;font-size: 25px;font-family: Belgrano, serif;">Type:&nbsp;<input type="radio" id="monthly" class="monthly" value="monthly" style="margin-left: 25px;" name="radio1" required><label class="form-label" for="monthly" style="margin-left: 10px;">Monthly</label><input type="radio" id="bimonth" value="bimonth" class="bimonth" style="margin-left: 25px;" name="radio1" required><label class="form-label" for="bimonth" style="margin-left: 10px;">Bi-Monthly</label></p><button class="btn btn-primary" type="submit" name="submit" value="submit" style="margin-bottom: 20px;margin-top: 0px;font-size: 26px;font-family: Belgrano, serif;background: #9599ff;border-color: #9599ff;">Compute</button>
+            <div class="text-center" style="margin-top: 40px;">
+                <p style="font-size: 30px;font-family: Belgrano, serif;">Salary:&nbsp;<center><input class="form-control" type="text" style="width: 400px;text-align: center;border: 2px solid #000000 ;" name="annual" required oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;).replace(/(\..*)\./g, &#39;$1&#39;);"></center></p>
+                <center><p style="margin-top: 35px;font-size: 25px;font-family: Belgrano, serif;border: 4.4px dashed rgb(0,0,0);width: 530px;">Type:&nbsp;<input type="radio" id="monthly" class="monthly" value="monthly" style="margin-left: 25px;" name="radio1" required><label class="form-label" for="monthly" style="margin-left: 10px;">Monthly</label><input type="radio" id="bimonth" value="bimonth" class="bimonth" style="margin-left: 25px;" name="radio1" required><label class="form-label" for="bimonth" style="margin-left: 10px;">Bi-Monthly</label></p></center><button class="btn btn-primary" type="submit" name="submit" value="submit" style="margin-bottom: 25px;margin-top: 20px;font-size: 26px;font-family: Belgrano, serif;background: #95ceff;border: 6px groove #62b6ff;">Compute</button>
 
             </div>
         </form>
@@ -122,7 +122,7 @@
 
                     echo "<center><font size='6pt'> Annual Salary: PHP $salary <br></center></font>"; 
                     echo "<center><font size='6pt'> Est Annual Tax: PHP $annualTax<br></center></font>";
-                    echo "<center><font size='6pt'> Est Monthly Tax: PHP $monthlyTax<br></center></font>";
+                    echo "<center><font size='6pt'; > Est Monthly Tax: PHP $monthlyTax<br></center></font>";
                     }
                 }
         ?>
