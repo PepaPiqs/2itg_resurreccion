@@ -16,7 +16,7 @@
 
 <body background="https://cdn.pixabay.com/photo/2021/03/22/14/11/internet-6114751_960_720.jpg">
     <div class="container border rounded" style="background: #fffb95;height: 630px;margin-top: 20px;width: 1000px;">
-        <center><h1 class="text-center" style="margin-top: 30px;font-family: 'Berkshire Swash', serif;font-weight: bold;width: 725px;padding-top: 5px;padding-bottom: 5px;border: 8.5px ridge #c695ff ;;">Marcos Magnanakaw: Tax Calculator</h1></center>
+        <center><h1 class="text-center" style="margin-top: 30px;font-family: 'Berkshire Swash', serif;font-weight: bold;width: 725px;padding-top: 5px;padding-bottom: 5px;border: 8.5px ridge #62b6ff ;;">Buwis Buhay: A Tax Calculator</h1></center>
         <form>
             <div class="text-center" style="margin-top: 40px;">
                 <p style="font-size: 30px;font-family: Belgrano, serif;">Salary:&nbsp;<center><input class="form-control" type="text" style="width: 400px;text-align: center;border: 2px solid #000000 ;" name="annual" required oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;).replace(/(\..*)\./g, &#39;$1&#39;);"></center></p>
@@ -58,7 +58,7 @@
                         $annualTax = 130000+$excess*0.30;
                         $monthlyTax = $annualTax/12;
                     }
-                    else if($salary >2000000.0 && $salary <= 8000000000.0)
+                    else if($salary >2000000.0 && $salary <= 8000000.0)
                     {
                         $excess =  $salary-2000000.0;
                         $annualTax = 490000+$excess*0.32;
@@ -104,7 +104,7 @@
                         $annualTax = 130000+$excess*0.30;
                         $monthlyTax = $annualTax/12;
                     }
-                    else if($salary >2000000.0 && $salary <= 8000000000.0)
+                    else if($salary >2000000.0 && $salary <= 8000000.0)
                     {
                         $excess =  $salary-2000000.0;
                         $annualTax = 490000+$excess*0.32;
